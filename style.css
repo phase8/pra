@@ -1,0 +1,239 @@
+* {
+    font-family: 'Open Sans', arial;
+    box-sizing: border-box;
+}
+
+/*
+    arial jakby czcionka google nie zadziała
+     */
+
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 10;
+    background-color: white;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+
+}
+
+/*
+    to jest zapis skrocony gora i dol 0 prawe lewe auto
+     
+    margin: 0 auto 0 auto
+    zegar czyli 12 3 6 9 
+     */
+
+
+
+
+
+.my-container {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+    border: 2px solid blue;
+    display: flex;
+}
+
+.my-container nav {
+    z-index: 1;
+    position: relative;
+    border: 2px solid blue;
+
+    align-self: flex-start;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: 10vh;
+    border: 2px solid blue;
+    width: 40vw;
+
+
+
+
+
+
+}
+
+.my-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+    width: 100%;
+    border: 2px solid blue;
+}
+
+
+.my-container h2 {
+    z-index: 1;
+    position: relative;
+    border: 2px solid blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+*/
+
+
+
+
+
+nav a {
+    display: flex;
+    align-items: center;
+    /*align-content =/= align-items: */
+    justify-content: center;
+    text-decoration: none;
+    font-size: 3vh;
+    transition: all 1s ease;
+    color: white;
+    border: 2px solid blue;
+
+
+}
+
+
+
+h2 {
+    color: white;
+    align-self: flex-end;
+    border: 2px solid blue;
+    font-size: 3vh;
+    width: 60vw;
+}
+
+h3 {
+    color: #eb8c39;
+    align-self: flex-end;
+    border: 2px solid blue;
+}
+
+
+a.menu:hover {
+
+    cursor: pointer;
+    color: #3462bf;
+
+}
+
+
+
+
+
+article {
+    margin: 0 auto;
+    max-width: 90vw;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    overflow: hidden;
+    /*
+     overflow: hidden - don't remove !
+    */
+    border: 2px solid blue;
+
+}
+
+
+article h1 {
+    font-size: 30px;
+    margin: 0 10% 20px 10%;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid#2d3837;
+    border: 2px solid blue;
+
+}
+
+img.left {
+    float: left;
+    padding: 20px;
+    width: 25%;
+    border-radius: 5%;
+    border: 2px solid blue;
+    margin: 0px 10px 10px 0;
+}
+
+article p {
+    text-align: justify;
+    line-height: 20px;
+    font-size: 3vh;
+    line-height: 3vh;
+    padding: 30px 0;
+    width: 40vw;
+    border: 2px solid blue;
+}
+
+
+
+footer {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 600;
+    border: 2px solid blue;
+    background-color: #3462bf;
+}
+
+/*
+    line-height: 40px bo footer też ma wysokosć 40 px więc w ten sposób centrujemy w pionie 
+     */
+
+/*
+   media queres zawsze na samym końcu 
+     */
+
+@media (max-width: 900px) {
+    article {
+        background-color: blue;
+    }
+
+    nav a {
+        width: 50%
+    }
+
+}
+
+@media (max-width: 800px) {
+    article {
+        background-color: red;
+    }
+
+    nav a {
+        width: 100%
+    }
+
+    article p {
+
+        font-size: 11px;
+
+    }
+
+
+}
