@@ -11,7 +11,7 @@
 body {
     margin: 0;
     font-family: Arial;
-    font-size: 10;
+    font-size: 2vh;
     background-color: white;
 }
 
@@ -74,11 +74,6 @@ nav a {
 }
 
 
-
-
-
-
-
 .bg {
     position: absolute;
     left: 0;
@@ -128,96 +123,146 @@ article {
     max-width: 90vw;
     margin-top: 30px;
     margin-bottom: 20px;
-    padding: 0 20px;
-    overflow: hidden;
-    /*
-     overflow: hidden - don't remove !
-    */
-    border: 2px solid blue;
+
+
 
 }
 
 
 article h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 5vh;
-    margin: 0 10% 20px 10%;
-    text-align: center;
-    padding-bottom: 15px;
+    margin: 10vh 0 10vh 0;
+    height: 20vh;
+    width: auto;
 
-    border-bottom: 2px solid#2d3837;
-    border: 2px solid blue;
+    background: rgb(151, 157, 166) linear-gradient(45deg, rgb(162, 163, 165) 0%,
+            rgb(111, 113, 116) 100%) repeat scroll 0% 0%;
+    border-radius: 4px;
+}
+
+
+div.left {
+    height: 40vh;
+    font-size: 2.5vh;
+    width: 90vw;
+
+    text-align: justify;
+    font-weight: 600;
+    display: flex;
 
 }
+
 
 img.left {
     padding: 1vh;
-    float: left;
     width: auto;
     border-radius: 10%;
-    border: 2px solid blue;
-    vertical-align: middle;
     height: 40vh;
-    margin-right: 10vw;
+
 
 }
 
-p.left {
-    height: 40vh;
-    font-size: 3vh;
-    line-height: 40vh;
-    width: 90vw;
-    border: 2px solid blue;
-    overflow: hidden;
-    font-weight: 600;
+
+p.desc {
+    background: rgb(151, 157, 166) linear-gradient(45deg, rgb(162, 163, 165) 0%,
+            rgb(111, 113, 116) 100%) repeat scroll 0% 0%;
+
+
+    color:
+        rgb(255, 255, 255);
+
+    box-shadow:
+        rgba(162, 163, 165, 0.5) 0px 12px 10px -8px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+
+    padding: 20px 70px;
 }
+
+
 
 img.right {
-    position: relative;
-    left: 18vw;
-    bottom: 0vh;
-    z-index: 2;
+
     padding: 1vh;
     width: auto;
     border-radius: 10%;
-    border: 2px solid blue;
-    vertical-align: middle;
+
     height: 40vh;
+
+
 }
 
 
 
-p.right {
+
+
+div.right {
     height: 40vh;
-    font-size: 3vh;
-    line-height: 40vh;
-    width: 90w;
-    border: 2px solid blue;
-    overflow: hidden;
+    font-size: 2.5vh;
+    width: 90vw;
+
+    text-align: justify;
     font-weight: 600;
-
+    display: flex;
 }
 
 
-h3 {
-    margin: 0 auto;
-    color: #eb8c39;
-    border: 2px solid blue;
+
+
+.contact {
+
+    margin: 10vh auto 10vh auto;
+    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90vw;
-    height: 10vh;
+    width: 25vw;
+    height: 9vh;
+    font-size: 3vh;
+    font-weight: 600;
+    background: rgb(151, 157, 166) linear-gradient(45deg, rgb(162, 163, 165) 0%,
+            rgb(111, 113, 116) 100%) repeat scroll 0% 0%;
+    box-shadow:
+        rgba(162, 163, 165, 0.5) 0px 12px 10px -8px;
+    border-radius: 4px;
 }
 
 
 footer {
-    height: 80px;
-    line-height: 80px;
+    height: 15vh;
+    line-height: 15vh;
     text-align: center;
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: 600;
-    border: 2px solid blue;
+
+    background: rgb(162, 163, 165) linear-gradient(45deg, rgb(170, 170, 170) 0%,
+            rgb(160, 160, 160) 100%) repeat scroll 0% 0%;
 }
+
+
+h3 {
+    margin: 10vh auto 10vh auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 35vh;
+    font-size: 3vh;
+    font-weight: 600;
+    background: rgb(151, 157, 166) linear-gradient(45deg, rgb(162, 163, 165) 0%,
+            rgb(111, 113, 116) 100%) repeat scroll 0% 0%;
+    box-shadow:
+        rgba(162, 163, 165, 0.5) 0px 12px 10px -8px;
+    border-radius: 4px;
+    line-height: 5vh;
+}
+
 
 /*
     line-height: 40px bo footer też ma wysokosć 40 px więc w ten sposób centrujemy w pionie 
@@ -232,9 +277,7 @@ footer {
         background-color: blue;
     }
 
-    nav a {
-        width: 50%
-    }
+
 
 }
 
@@ -243,15 +286,7 @@ footer {
         background-color: red;
     }
 
-    nav a {
-        width: 100%
-    }
 
-    article p {
-
-        font-size: 11px;
-
-    }
 
 
 }
